@@ -8,8 +8,8 @@ from sklearn.model_selection import train_test_split
 
 date = [None] * 10886
 for i in range(10886):
-    date[i] = [int(train['datetime'][i][5:7]), int(train['datetime'][i][8:10]), int(train['datetime'][i][11:13])]
-df = pd.DataFrame(date,columns=['month','day','time'])
+    date[i] = [int(train['datetime'][i][1:4]), int(train['datetime'][i][5:7]), int(train['datetime'][i][8:10]), int(train['datetime'][i][11:13])]
+df = pd.DataFrame(date,columns=['year', 'month', 'day', 'time'])
 train = train.join(df)
 
 #test train spitting
