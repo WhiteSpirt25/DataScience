@@ -47,4 +47,3 @@ onehot = enc.transform(X)
 
 print('One hot encoded')
 splitAndFit(onehot,y,clf)
-#так как нулевых столбцов нет то и признаков нет чтобы удалять
