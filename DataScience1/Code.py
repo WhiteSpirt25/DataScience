@@ -54,7 +54,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 #knn in action
 from sklearn.neighbors import KNeighborsClassifier
 
-model = KNeighborsClassifier(n_neighbors=6)
+model = KNeighborsClassifier(n_neighbors=6)#different metrics don't improve the result
 
 model.fit(X_train,y_train)
 
